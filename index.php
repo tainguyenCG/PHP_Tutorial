@@ -1,11 +1,28 @@
 
 <?php
-echo "<h1>Dưới đây là Hằng </h1>"; 
-$bien = "naylabien";
-define("hang", "2000");
-echo $bien . hang . "chuỗi kí tự nối vào";
-// câu lệnh print giống tương  tự echo nhưng khác về cách thức
-echo "hello"; // còn echo sẽ đếm kí tự, cụ thể hello có 5 chữ sẽ trả về 5
-print "hello"; // cái này dù nhiều chữ nhưng trả về là 1 
+// $a = 0;
+// if ($a < 1){ 
+//     echo "biến số " . $a . " lớn hơn 1";
+// } else {
+//     echo "biến số " . $a . " bé hơn 1";
+// }
+//
+// $b = 100;
+// $c = 2000;
+// if ($b > $c){
+//     echo "biến " . $b . " < " . $c ;
+// }else{
+//     echo "biến " . $c . " > " . $b ;
+// }
+//
+$b = 100;
+$c = 2000;
+if ($b > $c){
+    echo "biến " . $b . " > " . $c ;
+}elseif($b == $c){
+    echo "biến " . $b . " = " . $c ;
+}else{
+    echo "Tất cả đều sai";
+}
 
 ?>
