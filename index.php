@@ -1,7 +1,8 @@
 
 <?php
 echo "<h1>Dưới đây là Hằng </h1>"; 
- define ("hang", "2003");
- echo hang ;
+$bien = "naylabien";
+define("hang", "2000");
+echo $bien . hang . "chuỗi kí tự nối vào";
 
 ?>
