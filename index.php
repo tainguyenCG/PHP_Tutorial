@@ -5,6 +5,9 @@
  echo "<br>";
  $b = 39;
  var_dump($b); //kiểu int và = 39
+ echo "<br>";
+ $c = 5.5;
+ var_dump($c);//kiểu float
 
 
 ?>
