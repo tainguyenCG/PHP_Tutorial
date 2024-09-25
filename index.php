@@ -1,48 +1,21 @@
 
 <?php
-// $a = 0;
-// if ($a < 1){ 
-//     echo "biến số " . $a . " lớn hơn 1";
-// } else {
-//     echo "biến số " . $a . " bé hơn 1";
-// }
-//
-// $b = 100;
-// $c = 2000;
-// if ($b > $c){
-//     echo "biến " . $b . " < " . $c ;
-// }else{
-//     echo "biến " . $c . " > " . $b ;
-// }
-//
-// $b = 100;
-// $c = 2000;
-// if ($b > $c){
-//     echo "biến " . $b . " > " . $c ;
-// }elseif($b == $c){
-//     echo "biến " . $b . " = " . $c ;
-// }else{
-//     echo "Tất cả đều sai";
-// }
-// $a = 000;
-// $b = 400;
-// $c = $a + $b ;
-// if($c > 500){
-//     echo $c . " lớn hơn 500";
-// } elseif ($c == 500){
-//     echo $c . " bằng 500";
-// }else{
-//     echo " không thỏa điều kiện ";
-// }
-
-// toán tử 3 ngôi 
-$a = 900;
-$b = 400;
-$c = $a + $b;
-
-echo ($c > 500) ? $c . " lớn hơn 500" : (($c == 500) ? $c . " bằng 500" : " không thỏa điều kiện ");
-// hiểu là sẽ in ra nếu $c > 500 đúng thì in ra $c lớn hơn 500. 
-//nếu điều kiện sai thì xét tiếp $c == 500 đúng thì $c = 500, 
-//nếu điều kiện sai nữa thì in ra câu không thỏa điều kiện
+//đếm các kí tự trong chuỗi 
+echo strlen("Nguyen van a"); // có 12 kí tự
+echo "<br/>"; // cho xuống dòng
+//đếm số lượng từ có trong chuỗi 
+echo str_word_count("Nguyen van a"); // có 3 vì Nguyen là 1, văn là 2, a là 3
+echo "<br/>"; // cho xuống dòng
+//đảo ngược chuỗi 
+echo strrev("Nguyen van a");// tất cả các chữ sẽ được lộn ngược lại 
+echo "<br/>"; // cho xuống dòng
+//tìm chuỗi xem nó bắt đầu từ vị trí nào, lưu ý bắt đầu từ 0 đến ...
+echo strpos("tran van chuong","chuong");//do chữ c bắt đầu từ 0 - c thì nằm vị trí 9 
+echo "<br>";
+echo strpos("tran van a","van");// do v bắt đầu từ 0 - v thì nằm vị trí số 5
+echo "<br/>"; // cho xuống dòng
+//thay thế văn bản có trong chuỗi
+echo str_replace("trần", "nguyễn"," trần văn chương");
+////str_replace ("chuỗi","chữ thay thế","chuỗi cần thay thế");
 
 ?>
