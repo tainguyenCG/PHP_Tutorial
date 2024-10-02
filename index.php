@@ -1,7 +1,7 @@
 <?php 
 
 $name = array("thương", " hùng", " xưng"," bá");
-for($a = 0; $a < 4; $a++){ //do vòng lặp trong for này mảng có 4 nên <4 và in ra mảng với biến a cho từng phần tử
+for($a = 0; $a < count($name); $a++){ //dùng count để đếm phần tử và cho biến a < số phần tử đếm được 
     echo $name[$a];
     echo "<br>";// xuống dòng
 }
