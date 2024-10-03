@@ -27,7 +27,7 @@
     </select>
     <br>
     <label for="">Bình Luận</label>
-    <textarea name="binhluan" id="">Nội dung bình luận</textarea>
+    <textarea name="binhluan" id="" placeholder="Nội dung bình luận"></textarea>
     <br>
    <button name="btn" value="gui">Gửi</button>
 </form>
