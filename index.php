@@ -1,11 +1,7 @@
 <?php 
 
-$name = array("D","C","E","F");
- sort($name);// sắp xếp tăng dần
-echo print_r($name);
-//
-echo "<br>";
-$namee = array("A","B","E","F");
- rsort($namee);// sắp xếp giảm dần
-echo print_r($namee);
+$a = "12/10/20000";//   0/1/2
+$mang = explode("/", $a);//hiểu cái / này sẽ nhận biết các thành phần trong string đó
+var_dump($mang); //in ra array đó với kiểu dữ liệu được đổi sang string
+
 ?>
