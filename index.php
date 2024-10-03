@@ -1,9 +1,33 @@
-<?php
-require ("xuly.php");// chạy file có trong xuly.php, LƯU Ý: nếu dùng nhiều lần thì nó gộp nhiều lần
-require_once("xuly.php");// gộp 1 lần duy nhất file đó, dù nhiều lệnh như v nó vẫn gộp 1 lần vì trùng tên xuly.php
-echo "<br>";
-include("xuly.php"); // dùng như require
-include_once("xuly.php"); // dùng như require_one
-/**require: Khi file được nạp là bắt buộc để chương trình chạy.
-include: Khi file được nạp là tùy chọn, không bắt buộc và chương trình có thể tiếp tục chạy mà không có nó. */
-?>
+
+<form action="index.php" method="get" name="form">
+    <label for="">Username</label>
+    <input type="text" name="username">
+    <br>
+    <label for="">PassWord</label>
+    <input type="password" name="password">
+    <br>
+    <label for="">Năm sinh</label>
+    <input type="date">
+    <br>
+    <label for="nam">Giới Tính:</label>
+    <input type="radio" id="nam" value="nam" name="gioitinh">
+    <label for="nam">Nam</label>
+    <input type="radio" id="nu" value="nu" name="gioitinh">
+    <label for="nu">Nữ</label>
+    <br>
+    <label for="nam">Bạn có đồng ý không</label>
+    <input type="checkbox" value="yes" name="check">
+    <label for="">Yes</label>
+    <br>
+    <label for="">Quốc Tịch</label>
+    <select name="quoctich" id="">
+        <option value="vietnam">Việt Nam</option>
+        <option value="chaua">Châu Á</option>
+        <option value="my">Mỹ</option>
+    </select>
+    <br>
+    <label for="">Bình Luận</label>
+    <textarea name="binhluan" id="">Nội dung bình luận</textarea>
+    <br>
+   <button name="btn" value="gui">Gửi</button>
+</form>
