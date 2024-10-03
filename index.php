@@ -1,5 +1,12 @@
 <?php 
 
-header('location: xuly.php');// chuyển file từ index sang trang xyly bằng cú pháp này 
+$a = 110;
+$b = 200;
+function phepcong(){
+    $GLOBALS['c']  = $GLOBALS['a'] + $GLOBALS['b'];
+}
+phepcong();
+echo $c;
+//biến toàn cầu để truy cập mọi phạm vi $GLOBALS['c'] 
 
 ?>
