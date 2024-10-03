@@ -4,4 +4,6 @@ require_once("xuly.php");// gộp 1 lần duy nhất file đó, dù nhiều lệ
 echo "<br>";
 include("xuly.php"); // dùng như require
 include_once("xuly.php"); // dùng như require_one
+/**require: Khi file được nạp là bắt buộc để chương trình chạy.
+include: Khi file được nạp là tùy chọn, không bắt buộc và chương trình có thể tiếp tục chạy mà không có nó. */
 ?>
